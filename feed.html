@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | InNeed</title>
 </head>
-<body>
-    <button type="button"> Create Post </button>
+<body style="margin: 0; padding: 0;">
+    <nav style="display: flex; height: 50px; background-color: green; align-items: center; padding: 5px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png"
+        style="height: 40px;" />
+    
+    <input type="text" placeholder="Search" style="margin-left: 20px; border-radius: 100px; padding: 5px;" />
+    <div style="align-items: center; display: flex; flex-grow: 1; justify-content: flex-end; gap: 10px;">
+    <a href="/feed.html">Home</a>
+    <a href="#">Notifications</a>
+
+    <img style="border-radius: 50%; height: 50px;" src="https://claws.rit.edu/photos/getphotoid.php?Client=Marketing&UN=dxkvse&HASH=3602851e0b5ef0995985691d24c17f0e13d216e8&T=1761670373" />
+    </div>
+</nav>
+
+    <img style="opacity: 0.4; position: absolute; z-index: -1; width: 100%; height: 100%;" src="https://micocf.org/wp-content/uploads/2024/10/shutterstock_1588320151-4.jpg" />
+    <div id="container" style="display: flex; flex-direction: column; align-items: center; padding-top: 20px;">
+        <div id="createPostContainer" style="display: flex; align-items: center; width: 40%; flex-direction: column; background-color: white; padding: 20px; ">
+            <div id="row" style="display: flex; width: 100%; align-items: center; margin-bottom: 10px;">
+                <img src="https://claws.rit.edu/photos/getphotoid.php?Client=Marketing&UN=dxkvse&HASH=3602851e0b5ef0995985691d24c17f0e13d216e8&T=1761670373" alt="Profile Picture" style="border-radius: 50%; height: 50px; vertical-align: middle;" />
+                <textarea style="width: 100%; height: 50px; margin-left: 10px;"></textarea>
+            </div>
+            <button type="button" style="align-self: flex-end;  height: 50px; width: 25%;">Post</button>
+        </div>
+
+        <div id="feedContainer" style="padding: 20px; background-color: white; display: flex; flex-direction: column; align-items: center; width: 40%; margin-top: 20px; gap: 10px;">
+            <div class="post" style=" width: 100%; padding: 10px;">
+                <img src="https://claws.rit.edu/photos/getphotoid.php?Client=Marketing&UN=dxkvse&HASH=3602851e0b5ef0995985691d24c17f0e13d216e8&T=1761670373" alt="Profile Picture" style="border-radius: 50%; height: 40px; vertical-align: middle;" />
+                <span style="font-weight: bold; margin-left: 10px;">Daniel Krutz</span>
+                <p style="margin-top: 10px;">I love volunteering! It's great! Come help me volunteer!</p>
+            </div>
+
+            <div class="post" style=" width: 100%; padding: 10px;">
+                <img src="https://claws.rit.edu/photos/getphotoid.php?Client=Marketing&UN=dxkvse&HASH=3602851e0b5ef0995985691d24c17f0e13d216e8&T=1761670373" alt="Profile Picture" style="border-radius: 50%; height: 40px; vertical-align: middle;" />
+                <span style="font-weight: bold; margin-left: 10px;">The Red Cross</span>
+                <p style="margin-top: 10px;">I love volunteering! It's great! Come help me volunteer!</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- <button type="button"> Create Post </button>
     <label for="feed">Your Feed:</label>
 
     <textarea id="feed_area" name="feed_area" rows="4" cols="50" disabled="True">
      i love volunteering! It’s great! Come help me volunteer! 
-    </textarea>
+    </textarea> -->
 </body>
 </html>
