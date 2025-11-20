@@ -14,8 +14,10 @@
 
 <body>
     <nav style="display: flex; height: 50px; background-color: green; align-items: center; padding: 5px;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png"
-            style="height: 40px;" />
+        <a href="feed.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png"
+                style="height: 40px;" />
+        </a>
 
         <input type="text" placeholder="Search" style="margin-left: 20px; border-radius: 100px; padding: 5px;" />
         <div style="align-items: center; display: flex; flex-grow: 1; justify-content: flex-end; gap: 10px;">
@@ -25,20 +27,24 @@
             <a href="feed.html">
                 <img style="border-radius: 50%; height: 50px;"
                     src="https://claws.rit.edu/photos/getphotoid.php?Client=Marketing&UN=dxkvse&HASH=3602851e0b5ef0995985691d24c17f0e13d216e8&T=1761670373" />
-            </a></div>
+            </a>
+        </div>
     </nav>
 
     <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
         <h1>Manage Organization</h1>
         <form style="display: flex; flex-direction: column; width: 50%; gap: 10px;">
             <label for="org-name">Organization Name:</label>
-            <input type="text" id="org-name" name="org-name" placeholder="Enter organization name" style="padding: 5px; border-radius: 10px;">
+            <input type="text" id="org-name" name="org-name" placeholder="Enter organization name"
+                style="padding: 5px; border-radius: 10px;">
 
             <label for="org-description">Organization Description:</label>
-            <textarea id="org-description" name="org-description" rows="4" placeholder="Enter organization description" style="padding: 5px; border-radius: 10px;"></textarea>
+            <textarea id="org-description" name="org-description" rows="4" placeholder="Enter organization description"
+                style="padding: 5px; border-radius: 10px;"></textarea>
 
             <label for="org-logo">Organization Logo URL:</label>
-            <input type="text" id="org-logo" name="org-logo" placeholder="Enter logo URL" style="padding: 5px; border-radius: 10px;">
+            <input type="text" id="org-logo" name="org-logo" placeholder="Enter logo URL"
+                style="padding: 5px; border-radius: 10px;">
 
             <label for="org-members">Organization Members:</label>
             <table>
@@ -59,7 +65,9 @@
                 </tr>
             </table>
 
-            <button type="submit" style="padding: 10px; border-radius: 10px; background-color: green; color: white; border: none;">Save Changes</button>
+            <button type="submit"
+                style="padding: 10px; border-radius: 10px; background-color: green; color: white; border: none;">Save
+                Changes</button>
         </form>
 
 </body>
